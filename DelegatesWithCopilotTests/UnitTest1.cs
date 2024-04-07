@@ -25,14 +25,14 @@ public class Tests
     public void TestPrintNumber()
     {
         Program.PrintNumber(100000);
-        Assert.AreEqual("Number: 100000\r\n", stringWriter.ToString());
+        Assert.That(stringWriter.ToString(), Is.EqualTo("Number: 100000\r\n"));
     }
 
     [Test]
     public void TestPrintMoney()
     {
         Program.PrintMoney(10000);
-        Assert.AreEqual("Money: £10,000.00\r\n", stringWriter.ToString());
+        Assert.That(stringWriter.ToString(), Is.EqualTo("Money: £10,000.00\r\n"));
     }
 
 }    
