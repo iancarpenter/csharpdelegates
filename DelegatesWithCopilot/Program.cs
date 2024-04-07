@@ -1,24 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-// 1. Create a hello world program in C# demostrating how deletegates work
-// 2. ensure that the code is commented
-// 3. Ensure that the code is well formatted
-// 4. Ensure that the code is easy to test
-
-using System;
-
-namespace DelegatesWithCopilot
+﻿namespace DelegatesWithCopilot
 {
     // Delegate is a type that represents references to methods with a particular parameter list and return type.
     // When you instantiate a delegate, you can associate its instance with any method with a compatible signature and return type.
     // You can invoke (or call) the method through the delegate instance.
-    public delegate void Print(int value);
-
+    
     public class Program
     {
         static void Main(string[] args)
         {
             // Instantiate the delegate
-            Print printDelegate = PrintNumber;
+            Action<int> printDelegate = PrintNumber;
 
             // Call the delegate
             printDelegate(100000);
