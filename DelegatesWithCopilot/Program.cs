@@ -18,18 +18,18 @@ namespace DelegatesWithCopilot
         static void Main(string[] args)
         {
             // Instantiate the delegate
-            Print printDel = PrintNumber;
+            Print printDelegate = PrintNumber;
 
             // Call the delegate
-            printDel(100000);
-            printDel(200);
+            printDelegate(100000);
+            printDelegate(200);
 
             // Instantiate the delegate with a different method
-            printDel = PrintMoney;
+            printDelegate = PrintMoney;
 
             // Call the delegate
-            printDel(10000);
-            printDel(200);
+            printDelegate(10000);
+            printDelegate(200);
         }
 
         // Method that takes an integer and prints to the console
